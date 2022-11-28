@@ -1,0 +1,28 @@
+<section class="products">
+    <div class="prod">
+
+        <div class="prod-cont">
+            <div class="prod-head">
+                <h1>Categories</h1>
+                <button type="button" class="add-prod-btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Add Category</button>
+            </div>
+
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">id</th>
+                    <th scope="col">Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let d of prodlist" (click)="onRou(d)">
+                    <th scope="row">{{prodlist.indexOf(d) +1}}</th>
+                    <td>{{d}}</td>
+                  </tr>
+                </tbody>
+              </table>  
+ 
+        </div>
+
+    </div>
+</section>
